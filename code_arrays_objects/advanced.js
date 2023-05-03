@@ -67,3 +67,15 @@ if (scotlandPopulation > englandPopulation && scotlandPopulation > walesPopulati
 } else {
   console.log("Compared to the other countries in the UK, Scotland's population is somewhere in the middle.");
 }
+
+// alternative method to Q4
+populations = [scotlandPopulation, englandPopulation, walesPopulation, northernIrelandPopulation]
+populations = populations.sort(function(a, b){return a-b})
+
+if(populations[0] === scotlandPopulation){
+  console.log("smallest");
+} else if (populations[3] === scotlandPopulation){
+  console.log("biggest");
+} else {
+  console.log("in the middle");
+}
